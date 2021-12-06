@@ -1,0 +1,53 @@
+.esri-print.esri-widget.esri-widget--panel {
+  padding: unset !important;
+}
+
+.esri-print__container > div {
+  padding: 5px !important;
+}
+
+.esri-print__header-title {
+  background-color: $graysomber;
+  font-family: $font;
+  font-size: 20px;
+  color: $white;
+  font-weight: 200;
+  padding: 5px;
+}
+
+.esri-print__export-button {
+  background-color: $orange;
+  color: $white;
+  font-weight: 600;
+  border-radius: $borderradius;
+}
+
+.esri-print__panel-container {
+  width: 100%;
+}
+
+.esri-print__layout-tab-list {
+  display: flex;
+}
+
+.esri-print__layout-tab {
+  padding: 5px;
+  width: 50%;
+}
+
+.esri-print__layout-tab[aria-selected='true'],
+.esri-print__layout-tab[aria-selected='true']:hover .esri-print__layout-tab[aria-selected='false']:hover {
+  background-color: $orange;
+  color: $white;
+}
+
+.esri-print__layout-section {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.esri-print__export-panel-container {
+  padding: 5px;
+}

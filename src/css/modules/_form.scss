@@ -1,0 +1,108 @@
+$spaceBetweenLabelAndInput: 10px;
+$fieldWidth: 240px;
+$maxPopupContentHeight: 240px;
+$popupContentWidth: 460px;
+
+.esri-feature-form {
+  border: none;
+  padding: 0px;
+  font-family: $font;
+
+  .esri-feature-form__label {
+    font-weight: initial;
+    font-size: 12px;
+    flex-direction: initial; // Label and input in same line
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: -4px;
+    justify-content: right;
+    pointer-events: none;
+  }
+
+  .esri-feature-form__input {
+    width: $fieldWidth;
+    margin-left: $spaceBetweenLabelAndInput;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+
+  .esri-feature-form__date-input-part {
+    padding-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .esri-feature-form__date-format-hint {
+    visibility: hidden;
+  }
+
+  .esri-feature-form__input--time {
+    border: none;
+  }
+
+  .esri-feature-form__input--date {
+    border: none;
+  }
+
+  .esri-feature-form__date-input-container {
+    width: $fieldWidth;
+    margin-left: $spaceBetweenLabelAndInput;
+    height: 35px;
+    border: 1px solid #dee2e6;
+  }
+
+  .esri-select {
+    background: none;
+  }
+
+  .esri-feature-form__group {
+    margin: 0px;
+  }
+
+  .esri-feature-form__group-label {
+    background-color: rgba(240, 240, 240, 0.5); //f05b2c;
+  }
+
+  .esri-feature-form__group--active {
+    border-color: $orange;
+  }
+}
+
+.esri-popup__header {
+  // header convention TODO : move it in common css
+  background-color: $graysomber;
+  font-family: $font;
+  font-size: 20px;
+  color: $white;
+  font-weight: 200;
+}
+
+.esri-popup__content {
+  // avoid scroll bar when popup opened
+  min-height: 110px;
+  // padding-top: 7px;
+  // margin-bottom: 7px;
+}
+
+// Manage popup size depending on screen size
+.esri-popup__main-container {
+  width: $popupContentWidth; // same width on each scren size
+  max-height: $maxPopupContentHeight;
+}
+
+.esri-view-height-less-than-medium {
+  .esri-popup__main-container {
+    width: $popupContentWidth;
+    max-height: $maxPopupContentHeight;
+  }
+}
+
+.esri-view-width-medium {
+  .esri-popup__main-container {
+    width: $popupContentWidth;
+    max-height: $maxPopupContentHeight;
+  }
+}

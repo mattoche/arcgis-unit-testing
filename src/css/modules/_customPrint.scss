@@ -1,0 +1,23 @@
+.app-print_container {
+  width: 365px;
+  height: 300px;
+}
+
+.app-print_header {
+  background-color: #263238;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  padding: 5px;
+}
+
+.app-print_body,
+.app--print_tab-content {
+  padding: 5px;
+}
+
+.app--print_tab-header,
+.app--print_tab-content {
+  display: flex;
+}

@@ -1,0 +1,39 @@
+.esri-editor__header {
+  margin: 0;
+  padding: 0;
+}
+.esri-editor__title {
+  font-size: 1em;
+}
+.esri-editor__content {
+  justify-content: flex-start;
+}
+.esri-editor__mode-selection {
+  max-height: 100px;
+}
+.esri-item-list__group-header {
+  font-size: 1.1rem;
+}
+.esri-editor__controls {
+  width: inherit;
+}
+
+.esri-editor__header {
+  background-color: $graysomber;
+  color: white;
+  font-weight: 600;
+  border-radius: $borderradius;
+  height: 25px;
+}
+
+.esri-editor__header h4 {
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+.esri-editor__control-button {
+  background-color: $orange;
+  color: white;
+  font-weight: 600;
+  border-radius: $borderradius;
+}

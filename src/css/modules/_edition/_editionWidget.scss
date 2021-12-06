@@ -1,0 +1,42 @@
+$widgetWidth: 368px;
+$widgetMaxHeight: 450px;
+$widgetContentMaxHeight: 310px;
+
+.widget-edition {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  width: $widgetWidth;
+  max-height: $widgetMaxHeight;
+}
+
+.widget-edition_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263238;
+  font-family: Helvetica Neue, sans-serif;
+  font-size: initial;
+  color: #fff;
+  padding: 5px;
+
+  .widget-edition_header-title {
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .widget-edition_header-close {
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.widget-edition_content {
+  padding: 5px;
+  max-height: $widgetMaxHeight;
+}

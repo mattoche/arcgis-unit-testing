@@ -1,0 +1,192 @@
+//----------------------------
+//
+//  tab content
+//
+//----------------------------
+
+.widget-draw-tab_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $white;
+
+  .widget-draw-tab_header-btn {
+    flex: 1 0 21%;
+    border: solid 0.2em $white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13.5px;
+    padding: 2px;
+  }
+
+  .widget-draw-tab_header-btn:hover {
+    background-color: $white;
+    border-color: $white;
+  }
+
+  .widget-draw-tab_header-btn.active {
+    background-color: $white;
+    border-bottom-color: $orange;
+  }
+}
+
+.widget-draw-tab_content-wrapper {
+  overflow-y: auto;
+  max-height: $widgetContentMaxHeight;
+  margin: 5px 0;
+}
+
+.widget-draw-tab_content {
+  display: none;
+}
+
+.widget-draw-tab_content.active {
+  display: flex !important;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.widget-draw-tab_content-item {
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+  width: 75px;
+  margin: 5px;
+  min-height: 75px;
+  line-height: 12px;
+  border: 2px solid transparent;
+  cursor: pointer;
+
+  > div {
+    flex: 1 0 auto;
+  }
+
+  .widget-draw-tab_content-item_label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 75px;
+  }
+
+  img {
+    max-height: 26px;
+    width: auto;
+  }
+}
+
+.widget-draw-tab_content-item:hover {
+  border-color: black;
+}
+
+.widget-draw-tab_content-item.active {
+  border-color: $orange;
+}
+
+//----------------------------
+//
+//  perimeter circular content
+//
+//----------------------------
+
+.widget-draw-circular-perimeter,
+.widget-draw-circular-perimeter_content,
+.widget-draw-circular-perimeter_actions,
+.widget-draw-circular-perimeter_row,
+.widget-draw-circular-perimeter_row-item {
+  display: flex;
+  align-items: center;
+}
+
+.widget-draw-circular-perimeter,
+.widget-draw-circular-perimeter_content,
+.widget-draw-circular-perimeter_actions {
+  flex-direction: column;
+}
+
+.widget-draw-circular-perimeter {
+  max-height: $widgetContentMaxHeight;
+  > div {
+    margin: 5px 0;
+  }
+}
+
+.widget-draw-circular-perimeter_content {
+  max-height: $widgetContentMaxHeight;
+  overflow-y: scroll;
+}
+
+.widget-draw-circular-perimeter_row-item {
+  > div {
+    display: flex;
+    margin: 5px;
+  }
+
+  label {
+    font-size: smaller;
+  }
+
+  input[type='number'] {
+    width: 65px;
+    padding: revert;
+  }
+
+  .app-button-icon-only {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+.widget-draw-circular-perimeter_footer {
+  font-size: smaller;
+
+  p {
+    margin: auto;
+  }
+}
+
+//----------------------------
+//
+//  lasso content
+//
+//----------------------------
+
+.widget-lasso {
+  margin: 5px;
+}
+
+.widget-lasso-resume_container {
+  margin: 10px;
+  padding-left: 10px;
+  border-image-slice: 1;
+  border-left: 4px solid;
+  border-image-source: linear-gradient(270deg, #3c8db2, #5eb9aa);
+  font-size: smaller !important;
+
+  li {
+    display: flex;
+  }
+
+  li span:first-child {
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    width: 215px !important;
+    max-width: 215px !important;
+  }
+
+  // li span:last-child {
+  //   margin-left: auto;
+  // }
+
+  li.unauthorized {
+    color: red;
+  }
+}
+
+.widget-lasso-actions_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}

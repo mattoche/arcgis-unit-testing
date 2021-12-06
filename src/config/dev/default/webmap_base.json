@@ -1,0 +1,121 @@
+{
+  "item": {
+    "id": "a1cec18fa5ee4571a7c2ae16b37eb55c",
+    "owner": "portaladmin",
+    "orgId": "0123456789ABCDEF",
+    "created": 1578259788762,
+    "modified": 1587538065322,
+    "guid": null,
+    "name": null,
+    "title": "UNIT TESTING",
+    "type": "Web Map",
+    "typeKeywords": ["ArcGIS Online", "Collector", "Data Editing", "Explorer Web Map", "Map", "Online Map", "Web Map"],
+    "description": null,
+    "tags": ["test"],
+    "snippet": null,
+    "thumbnail": "thumbnail/ago_downloaded.png",
+    "documentation": null,
+    "extent": [
+      [2.2427, 48.7976],
+      [2.4359, 48.8698]
+    ],
+    "categories": [],
+    "spatialReference": null,
+    "accessInformation": null,
+    "licenseInfo": null,
+    "culture": "fr",
+    "properties": null,
+    "url": null,
+    "proxyFilter": null,
+    "access": "public",
+    "size": 13770,
+    "appCategories": [],
+    "industries": [],
+    "languages": [],
+    "largeThumbnail": null,
+    "banner": null,
+    "screenshots": [],
+    "listed": false,
+    "ownerFolder": "000d74123f8f453499319daa6407f438",
+    "protected": false,
+    "commentsEnabled": false,
+    "numComments": 0,
+    "numRatings": 0,
+    "avgRating": 0,
+    "numViews": 132,
+    "itemControl": "admin",
+    "scoreCompleteness": 33,
+    "groupDesignations": null
+  },
+  "itemData": {
+    "operationalLayers": [],
+    "baseMap": {
+      "baseMapLayers": []
+    },
+    "spatialReference": { "wkid": 102110, "latestWkid": 2154 },
+    "authoringApp": "WebMapViewer",
+    "authoringAppVersion": "10.6.1",
+    "version": "2.11",
+    "bookmarks": [
+      {
+        "viewpoint": {
+          "targetGeometry": {
+            "type": "extent",
+            "spatialReference": { "wkid": 102110, "latestWkid": 2154 },
+            "xmax": 650434.9685964033,
+            "xmin": 646193.0549500966,
+            "ymax": 6865067.476943799,
+            "ymin": 6862700.967949747
+          }
+        },
+        "name": "ArcDeTriomphe"
+      },
+      {
+        "viewpoint": {
+          "targetGeometry": {
+            "type": "extent",
+            "spatialReference": { "wkid": 102110, "latestWkid": 2154 },
+            "xmax": 654013.2755599406,
+            "xmin": 653483.1042213083,
+            "ymax": 6861778.725503344,
+            "ymin": 6861483.294325129
+          }
+        },
+        "name": "bastille"
+      },
+      {
+        "viewpoint": {
+          "targetGeometry": {
+            "type": "extent",
+            "spatialReference": { "wkid": 102110, "latestWkid": 2154 },
+            "xmax": 653104.5549140492,
+            "xmin": 652574.1170213511,
+            "ymax": 6859354.316507373,
+            "ymin": 6859058.681409829
+          }
+        },
+        "name": "place d'italie"
+      },
+      {
+        "viewpoint": {
+          "targetGeometry": {
+            "type": "extent",
+            "spatialReference": { "wkid": 102110, "latestWkid": 2154 },
+            "xmax": 656847.2433431683,
+            "xmin": 654726.7958450464,
+            "ymax": 6861749.416078062,
+            "ymin": 6860568.340010142
+          }
+        },
+        "name": "nation"
+      }
+    ],
+    "applicationProperties": {
+      "viewing": {
+        "routing": { "enabled": true },
+        "basemapGallery": { "enabled": true },
+        "measure": { "enabled": true }
+      }
+    }
+  }
+}

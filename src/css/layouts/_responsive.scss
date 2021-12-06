@@ -1,0 +1,64 @@
+/**-----------------------------------------------------------*/
+/**----------------------RESPONSIVE DESIGN--------------------*/
+/**-----------------------------------------------------------*/
+
+/** BEGIN : HEADER */
+
+@media (max-width: 916px) {
+  #clockWidget,
+  #wsMessage,
+  .app-header-title {
+    display: none !important;
+  }
+
+  .app-header-logo {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 625px) {
+  #openTableauMoyens,
+  #refreshMapId {
+    display: none !important;
+  }
+
+  .app-header-right > div {
+    padding: 0 !important;
+  }
+}
+
+/** END : HEADER */
+
+/** BEGIN : POPUP */
+
+.esri-view-width-xsmall .esri-popup--is-docked-bottom-center .esri-popup__main-container,
+.esri-view-width-xsmall .esri-popup--is-docked-top-center .esri-popup__main-container {
+  position: relative !important;
+}
+
+.esri-view-width-xsmall .esri-popup__main-container,
+.esri-view-width-small .esri-popup__main-container {
+  max-width: 100% !important;
+}
+
+.esri-view-width-xsmall .popup-geosuivi-cluster_details_container,
+.esri-view-width-small .popup-geosuivi-cluster_details_container {
+  margin: 0 !important;
+}
+
+.esri-view-width-xsmall .esri-popup__main-container,
+.esri-view-width-small .esri-popup__main-container,
+.esri-view-width-xsmall .popup-compa-operational-layer_container .esri-popup__main-container,
+.esri-view-width-small .popup-compa-operational-layer_container .esri-popup__main-container,
+.esri-view-width-xsmall .popup-geosuivi-cluster_details_container .esri-popup__main-container,
+.esri-view-width-small .popup-geosuivi-cluster_details_container .esri-popup__main-container,
+.esri-view-width-xsmall .popup-geosuivi-cluster_collapse_container .esri-popup__main-container,
+.esri-view-width-small .popup-geosuivi-cluster_collapse_container .esri-popup__main-container,
+.esri-view-width-xsmall .popup-geosuivi-elt_container .esri-popup__main-container,
+.esri-view-width-small .popup-geosuivi-elt_container .esri-popup__main-container {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-height: auto !important;
+}
+
+/** END : POPUP */

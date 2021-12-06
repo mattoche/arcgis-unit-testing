@@ -1,0 +1,237 @@
+.popup-default_container,
+.popup-geosuivi-cluster_details_container {
+  .esri-popup__footer {
+    display: none;
+  }
+}
+
+.esri-popup__inline-actions-container {
+  justify-content: center !important;
+}
+
+.popup-geosuivi-elt_container .esri-popup__header,
+.popup-geosuivi-cluster_collapse_container .esri-popup__header,
+.popup-geosuivi-cluster_details_container .esri-popup__header {
+  //background-color: #f8f8f8 !important;
+  color: unset !important;
+  border-bottom: 1px solid#ececec !important;
+}
+
+.popup-geosuivi-elt_container .esri-popup__header,
+.popup-geosuivi-cluster_details_container .esri-popup__header {
+  .esri-popup__header-title {
+    div {
+      background-image: url('assets/images/geosuivi/icon-wifi.png');
+      background-repeat: no-repeat;
+      background-position: left center;
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      padding-left: 24px !important;
+    }
+  }
+}
+
+.popup-geosuivi-elt_container .esri-popup__main-container {
+  //min-height: 420px !important;
+  max-height: 430px !important;
+  width: 236px !important;
+}
+
+.popup-geosuivi-elt_container .esri-popup__content {
+  margin: 5px 10px !important;
+}
+
+.geo-suivi-tpl--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('assets/images/geosuivi/smartphone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px !important;
+}
+
+.geo-suivi-tpl--header,
+.geo-suivi-tpl--content {
+  width: 165px !important;
+}
+
+.geo-suivi-tpl--header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  img {
+    width: 12px !important;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.geo-suivi-tpl--content,
+.geo-suivi-tpl--content-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.geo-suivi-tpl--content {
+  height: 255px;
+  margin-top: -16px;
+  div {
+    text-align: center;
+  }
+}
+
+.geo-suivi-tpl--content-infos {
+  height: inherit;
+  padding-top: 10px;
+}
+
+.geo-suivi-tpl--menu-value {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8 !important;
+  color: unset !important;
+  cursor: pointer;
+  span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.geo-suivi-tpl--menu-value:hover,
+.geo-suivi-tpl--menu-item:hover {
+  background-color: #e1ddd5 !important;
+}
+
+.geo-suivi-tpl--menu-items {
+  height: 180px;
+  overflow: auto;
+  flex-direction: column;
+  display: none;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.geo-suivi-tpl--menu-item_reste-typ {
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+.popup-geosuivi-cluster_details_container .esri-popup__main-container {
+  width: 320px !important;
+}
+
+.popup-geosuivi-cluster_collapse_container .esri-popup__main-container {
+  width: 220px !important;
+}
+
+.popup-geosuivi-cluster_collapse_container .esri-popup__content {
+  margin: unset !important;
+}
+
+.geo-suivi-tpl_cluster_collapse--container {
+  text-align: center;
+  margin: 10px !important;
+}
+
+.popup-geosuivi-cluster_details_container {
+  margin: 10px !important;
+}
+
+.geo-suivi-tpl_cluster_details--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.geo-suivi-tpl_cluster_details--content-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  .geo-suivi-tpl_cluster_details--content-item_left {
+    flex-basis: 75%;
+  }
+
+  .geo-suivi-tpl_cluster_details--content-item_center,
+  .geo-suivi-tpl_cluster_details--content-item_right {
+    flex: 1;
+  }
+
+  img {
+    padding-right: 5px;
+  }
+}
+
+.esri-popup__inline-actions-container > .esri-popup__action,
+.esri-popup__inline-actions-container > .esri-popup__action-toggle,
+.esri-popup__inline-actions-container:only-child > .esri-popup__action,
+.esri-popup__inline-actions-container:only-child > .esri-popup__action-toggle {
+  max-width: none !important;
+}
+
+#img_tel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#img_tel .popup-geosuivi-elt_container_tooltip {
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  z-index: 1;
+}
+
+#img_tel img {
+  width: min-content;
+}
+
+.geo-suivi-tpl_cluster_details--item-zoom,
+.geo-suivi-tpl_cluster_details--item-infos {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  img {
+    height: 18px;
+  }
+}
+
+.geo-suivi-tpl_cluster_details--item-imei {
+  font-size: 9px;
+  text-align: left !important;
+}
+
+.geo-suivi-tpl_cluster_details--item-version {
+  font-size: 9px;
+  text-align: right !important;
+  margin-bottom: -18px;
+}
+
+.geo-suivi-tpl_cluster_details--imei-version {
+  padding-bottom: 25px;
+}

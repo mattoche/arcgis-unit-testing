@@ -1,0 +1,4 @@
+{
+  "OperationalLayers": "http://localhost:8080/config/dev/default/webmap_base.json",
+  "GeometryService": "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/Geometry/GeometryServer"
+}

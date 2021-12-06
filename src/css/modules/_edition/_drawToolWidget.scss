@@ -1,0 +1,50 @@
+.widget-draw-tool {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-draw-tool_lock-active {
+  background-color: $red !important;
+}
+
+.widget-draw-tool_lock .esri-widget--button,
+.esri-widget--button[aria-controls='widget-draw-tool_expand-lasso_controls_content'] {
+  background-color: $graysombera;
+}
+
+.widget-draw-tool_lock .esri-widget--button:hover,
+.esri-widget--button[aria-controls|='widget-draw-tool_expand-lasso_controls_content']:hover {
+  background-color: $graysomber;
+}
+
+.widget-draw-tool .esri-widget--button {
+  border-radius: unset;
+  margin-bottom: 1px;
+}
+
+.widget-draw-tool .esri-expand:first-child .esri-widget--button {
+  border-radius: $borderradius $borderradius 0 0;
+}
+
+.widget-draw-tool .esri-expand:last-child .esri-widget--button {
+  border-radius: 0 0 $borderradius $borderradius;
+  margin-bottom: 0px;
+}
+
+.widget-draw-tool_expand-class {
+  width: inherit;
+  height: inherit;
+  background-size: 24px auto;
+}
+
+.widget-draw-tool_lasso {
+  background-image: url('assets/images/edition/icon-lasso-tool.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.widget-draw-tool_lock-icon {
+  background-image: url('assets/images/edition/icon-editor-lock.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}

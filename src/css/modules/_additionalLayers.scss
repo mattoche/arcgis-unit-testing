@@ -1,0 +1,44 @@
+.additionalLayers {
+  width: 366px !important;
+  background-color: white;
+  border: 1px solid $graysomber;
+  margin-right: 0px !important;
+
+  .esri-layer-list__item-toggle-icon {
+    cursor: pointer;
+    margin-right: 5px;
+    color: $orange;
+  }
+
+  .esri-icon-plus-circled {
+    color: $blue;
+  }
+  .esri-icon-minus-circled {
+    color: $orange;
+  }
+
+  .esri-layer-list__item-toggle-icon:active {
+    cursor: pointer;
+    background-color: gray;
+  }
+
+  .additional-layer-content {
+    overflow-y: scroll;
+    max-height: 420px !important;
+    height: 420px !important;
+  }
+
+  .additional-layer-subtitle {
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .filter {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px;
+  }
+}

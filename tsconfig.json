@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // TODO     "target": "ES5", ? FIXME
+    "target": "esnext",
+    "module": "commonjs",
+    "declaration": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "paths": {
+      "tslib" : ["./node_modules/tslib/tslib.d.ts"]
+    },
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "tsx",
+    "resolveJsonModule": true,
+    "strictPropertyInitialization": false
+  },
+  "include": [
+    "node_modules/arcgis-js-api/index.d.ts",
+    "src/**/*",
+  ],
+  "files": [
+    "src/interfaces.d.ts"
+  ]
+}

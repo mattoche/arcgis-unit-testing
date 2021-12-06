@@ -1,0 +1,118 @@
+.app-toggle-container *,
+.app-toggle-container *:before,
+.app-toggle-container *:after {
+  box-sizing: border-box;
+}
+
+.app-toggle {
+  position: relative;
+}
+
+.app-toggle input {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.app-toggle input:checked {
+  z-index: 1;
+}
+
+.app-toggle input:checked + label {
+  opacity: 1;
+  cursor: default;
+}
+
+.app-toggle input:checked + .app-toggle-first-label {
+  color: green !important;
+}
+
+.app-toggle input:checked + .app-toggle-second-label {
+  color: $red !important;
+}
+
+.app-toggle input:not(:checked) + label:hover {
+  opacity: 0.5;
+}
+
+.app-toggle label {
+  color: white;
+  opacity: 0.33;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.app-toggle .app-toggle-outside {
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.app-toggle .app-toggle-inside {
+  border-radius: 5rem;
+  background: #4a4a4a;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.app-toggle-vertical {
+  width: 7rem;
+  height: 2.4rem;
+}
+
+.app-toggle-vertical input {
+  height: 100%;
+  width: 9rem;
+  right: 0;
+  margin: 0;
+}
+
+.app-toggle-vertical label {
+  display: block;
+  height: 50%;
+  font-size: 0.9em !important;
+  font-weight: bold !important;
+  text-align: center;
+  border: 0.5px solid #6e6e6e;
+  margin: 0.5px;
+}
+
+.app-toggle-vertical .app-toggle-outside {
+  background: white;
+  position: absolute;
+  width: 1.5rem;
+  height: 100%;
+  right: -28px;
+  top: 0.5px;
+  cursor: pointer;
+}
+
+.app-toggle-vertical .app-toggle-inside {
+  height: 1.25rem;
+  left: 0.15rem;
+  top: 0.15rem;
+  width: 1.25rem;
+}
+
+.app-toggle-vertical .app-toggle-inside.app-toggle-first-input {
+  background-color: green !important;
+}
+
+.app-toggle-vertical .app-toggle-inside.app-toggle-second-input {
+  background-color: $red !important;
+}
+
+.app-toggle input:checked + .app-toggle-second-label {
+  color: $red !important;
+}
+
+.app-toggle-vertical input:checked ~ .app-toggle-outside .app-toggle-inside {
+  top: 0.15rem;
+}
+
+.app-toggle-vertical input ~ input:checked ~ .app-toggle-outside .app-toggle-inside {
+  top: 1rem;
+}

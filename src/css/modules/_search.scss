@@ -1,0 +1,26 @@
+$searchWidth: 90%;
+
+#searchWidget {
+  background-color: transparent !important;
+  text-align: initial !important;
+  width: $searchWidth;
+}
+
+.esri-search__input-container {
+  width: auto;
+}
+
+.input-text {
+  width: 70%;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  margin-left: 3px;
+}
+
+.app-widget--search-popup .esri-popup__header {
+  background-color: white !important;
+  color: unset !important;
+}

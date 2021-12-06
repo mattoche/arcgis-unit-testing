@@ -1,0 +1,83 @@
+// -------------------------------------------
+// ESRI
+// -------------------------------------------
+
+.esri-legend__layer-table {
+  margin-bottom: 0px !important;
+}
+
+.esri-legend {
+  border: none;
+}
+
+.esri-legend__layer-caption {
+  display: none;
+}
+
+// -------------------------------------------
+// APP
+// -------------------------------------------
+
+.app-symbol-row,
+.app-symbol-row-parent-type,
+.app-symbol-row-sub-types {
+  display: flex;
+  align-items: center;
+}
+
+.app-symbol-row {
+  width: 100% !important;
+}
+
+.app-symbol-row-parent-type,
+.app-symbol-row-sub-types {
+  flex-direction: column;
+  margin: 5px !important;
+}
+
+.app-symbol-row-sub-types {
+  border: 1px solid #c5c5c5 !important;
+}
+
+.app-symbol-row-sub-types {
+  max-height: 180px !important;
+  overflow-y: auto !important;
+  width: 95% !important;
+  padding: 0 8px 0 18px !important;
+}
+
+.app-layer-list-panel-container:hover,
+.app-symbol-row-parent-type:hover,
+.app-symbol-row-sub-types:hover {
+  border-color: #4599b0 !important;
+}
+
+.app-symbol-collapse {
+  display: flex;
+  color: #6e6e6e;
+  cursor: pointer;
+  transition: border-color 0.25s ease-in-out;
+}
+
+.app-symbol-collapse.disabled {
+  pointer-events: none;
+  color: #6e6e6e2e;
+}
+
+.app-symbol-row .esri-icon-arrow-down-circled {
+  transform: rotate(180deg);
+}
+
+.app-symbol-image {
+  width: 25%;
+  text-align: center;
+}
+
+.app-symbol-label {
+  width: 65%;
+  padding: 5px 0;
+}
+
+.app-symbol-visibility {
+  width: 10%;
+}

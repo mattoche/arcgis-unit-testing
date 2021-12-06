@@ -1,0 +1,279 @@
+.tableaumoyen {
+  display: flex;
+
+  &__resizer {
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 100%;
+    font-weight: bold;
+    color: #4b5d69;
+  }
+
+  &__resizer:hover {
+    cursor: col-resize;
+    user-select: none;
+  }
+
+  &__content {
+    &-hide {
+      display: none !important;
+    }
+
+    display: flex;
+    flex-direction: column;
+    width: calc(var(--tableau-moyen-width) - 15px);
+    padding: 5px 5px 5px 0;
+
+    &-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+
+      > button {
+        margin: 2px;
+        border: none;
+        background-color: #515b60;
+      }
+
+      input {
+        height: 24px;
+        margin-right: 2px;
+        border-radius: 2px;
+        width: -moz-available;
+        width: -webkit-fill-available;
+        max-width: 200px;
+      }
+    }
+
+    &-tab {
+      &-header {
+        display: flex;
+
+        button {
+          width: auto;
+          min-height: unset;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        button.active {
+          background-color: $button-color;
+          color: $button-color--inverse;
+        }
+
+        button:hover {
+          border: none !important;
+        }
+
+        button:focus {
+          outline: 0;
+        }
+      }
+
+      &-content {
+        display: flex;
+        flex: 1;
+        padding: 1px;
+        border: 0.5px solid #0079c1;
+        height: calc(100% - #{var(--tableau-moyen-y-offset)});
+        max-height: calc(100% - #{var(--tableau-moyen-y-offset)});
+      }
+    }
+
+    .table-pagination_float-btn {
+      display: none;
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50px;
+      background-color: #515b606b;
+      color: white;
+      font-size: revert;
+      font-weight: bolder;
+      border: none !important;
+    }
+
+    .table-pagination_float-btn:focus {
+      outline: none !important;
+    }
+
+    .table-pagination_float-btn:hover {
+      cursor: pointer;
+      background-color: #515b60;
+    }
+
+    .table-pagination_float-btn:not(.hover) {
+      animation-name: anime-opacity;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .table-pagination_float-prev-btn {
+      top: 38px;
+      left: 50%;
+    }
+
+    .table-pagination_float-next-btn {
+      bottom: 55px;
+      left: 50%;
+    }
+
+    &-table.active {
+      display: flex !important;
+      flex-direction: column;
+    }
+
+    &-table {
+      display: none;
+      width: 100%;
+      position: relative !important;
+
+      &-container {
+        display: flex;
+        overflow: auto;
+        background-color: white;
+
+        table {
+          display: table;
+          width: 100%;
+          border-collapse: collapse;
+
+          th,
+          td {
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+          }
+
+          th {
+            position: sticky;
+            top: 0;
+            padding: 0;
+          }
+
+          th button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 32px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: white;
+            border-bottom: 1px solid #d4d4d4;
+
+            i {
+              font-size: 12px;
+              pointer-events: none;
+              width: 12px !important;
+            }
+          }
+
+          th button:focus {
+            outline: none !important;
+          }
+
+          tr {
+            text-align: center;
+            cursor: pointer;
+          }
+
+          tr:nth-child(odd) {
+            background-color: rgba(38, 50, 56, 0.1);
+          }
+
+          tbody tr {
+            height: 43px !important;
+            max-height: 43px !important;
+          }
+
+          td {
+            height: 32px;
+            padding: 0 5px;
+
+            span {
+              display: flex;
+            }
+
+            span > div,
+            span > img {
+              margin: auto !important;
+            }
+          }
+
+          .column-resizer_active {
+            cursor: col-resize !important;
+
+            button {
+              pointer-events: none !important;
+            }
+          }
+
+          .column-resizer {
+            top: 0px;
+            right: 0px;
+            width: 9px;
+            position: absolute;
+            cursor: col-resize;
+            user-select: none;
+            height: 30px;
+            border-right: 1px solid #d4d4d4;
+          }
+
+          .column-resizer-end-anchor {
+            width: 2px !important;
+            animation-name: backgroundColorPalette;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+        }
+      }
+
+      &-pagination {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px 14px 2px 14px;
+        background-color: white;
+
+        div {
+          display: flex;
+          align-items: center;
+        }
+
+        .table-pagination_infos {
+          flex: 1;
+          color: #0079c1;
+        }
+
+        button {
+          display: flex !important;
+          min-height: 28px;
+          height: 28px;
+          border-radius: 1px;
+        }
+
+        button.esri-icon-expand::before,
+        button.esri-icon-collapse::before {
+          font-size: 11.5px;
+        }
+
+        button:disabled {
+          color: #c1c1c1;
+          pointer-events: none;
+        }
+
+        button.active {
+          background-color: #0079c1;
+          color: #fff;
+          border: none !important;
+          outline: none !important;
+        }
+      }
+    }
+  }
+}

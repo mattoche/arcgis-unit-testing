@@ -1,0 +1,50 @@
+// .esri-distance-measurement-2d {
+//   .esri-distance-measurement-2d__clear-button {
+//     width: 90%;
+//     margin-left: 10%;
+//     // margin-top: -24px;
+//   }
+//   .delete-measure-button {
+//     width: 10%;
+//     margin-top: -33px;
+//   }
+//   .esri-distance-measurement-2d__hint-text {
+//     padding-bottom: 33px;
+//   }
+// }
+
+.custom-measurement-widget {
+  display: flex;
+  flex-direction: column;
+
+  .custom-measurement-widget_actions-container {
+    display: flex !important;
+  }
+
+  .custom-measurement-widget_actions-container button:hover {
+    border-radius: unset;
+  }
+
+  .custom-measurement-widget_actions-container button {
+    margin: 0 1px 0 0 !important;
+    border-radius: unset;
+  }
+
+  .custom-measurement-widget_actions-container button:first-child {
+    border-radius: $borderradius 0 0 $borderradius;
+  }
+
+  .custom-measurement-widget_actions-container button:last-child {
+    border-radius: 0 $borderradius $borderradius 0;
+    margin: 0 !important;
+  }
+
+  .active {
+    background: #0079c1;
+  }
+}
+
+.esri-distance-measurement-2d.esri-widget.esri-widget--panel,
+.esri-area-measurement-2d.esri-widget.esri-widget--panel {
+  margin-bottom: 5px !important;
+}

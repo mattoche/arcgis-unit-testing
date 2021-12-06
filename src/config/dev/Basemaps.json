@@ -1,0 +1,16 @@
+{
+  "defaultMapPosition": {
+    "mapCenterX": 1.5,
+    "mapCenterY": 45,
+    "zoomFactor": 4,
+    "spatialReference": 3857
+  },
+  "defaultTileLayerId": "FDP",
+  "tileLayers": [
+    {
+      "url": "https://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer",
+      "title": "World Topo",
+      "id": "FDP"
+    }
+  ]
+}
